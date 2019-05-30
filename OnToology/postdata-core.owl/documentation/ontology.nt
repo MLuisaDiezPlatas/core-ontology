@@ -66,7 +66,6 @@
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#affects
 <http://postdata.linhd.uned.es/ontology/postdata-core#affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#affects> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#affects> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isAffectedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#affects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#affects> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
@@ -141,8 +140,8 @@ _:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-core#correspondsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#correspondsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#correspondsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#correspondsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Person or Organisation who play the role"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#correspondsTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
-<http://postdata.linhd.uned.es/ontology/postdata-core#correspondsTo> <http://www.w3.org/2000/01/rdf-schema#label> "Person or Organisation who play the role"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#correspondsTo> <http://www.w3.org/2000/01/rdf-schema#label> "correspondsTo"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#creates
@@ -231,15 +230,6 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasCreator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasCreator> <http://www.w3.org/2000/01/rdf-schema#label> "hasCreator"@en .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-core#hasCreatorAssociated
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasCreatorAssociated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasCreatorAssociated> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#participateAsCreator> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasCreatorAssociated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasCreatorAssociated> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasCreatorAssociated> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an Agent that corresponds the current Creator"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasCreatorAssociated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasCreatorAssociated> <http://www.w3.org/2000/01/rdf-schema#label> "hasCreatorAssociated"@en .
-# 
 # http://postdata.linhd.uned.es/ontology/postdata-core#hasDedication
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasDedication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasDedication> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isDedicatedTo> .
@@ -260,7 +250,6 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#hasFirstPart
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasFirstPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasFirstPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasFirstPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isFirstPart> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasFirstPart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#OrderedTextUnitList> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasFirstPart> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#TextUnit> .
@@ -294,16 +283,6 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to one of the works (an instance of PoeticWork) which form the current element under analysis"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasPart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasPart"@en .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-core#hasRole
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to one of the roles (an instance of Role) performed by the current Person or Organisation"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "hasRole"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#hasTextUnit
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasTextUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -347,7 +326,6 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#isAssignedTo
 <http://postdata.linhd.uned.es/ontology/postdata-core#isAssignedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isAssignedTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isAssignedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isAssignedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isAssignedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to one of the agents, almost always Person  to whom the current Role belongs."@en .
@@ -402,7 +380,6 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#isFirstPart
 <http://postdata.linhd.uned.es/ontology/postdata-core#isFirstPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isFirstPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isFirstPart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#TextUnit> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isFirstPart> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isFirstPart> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the container (an instance of Redaction) of which the item at hand is its first part"@en .
@@ -456,6 +433,17 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-core#isPart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isPart> <http://www.w3.org/2000/01/rdf-schema#label> "isPart"@en .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy
+<http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#performs> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Organisation that performs the current Role"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to one of the persons (instance of Person) to whom the current Role belongs"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isRoleOf"@en .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-core#isRealisedThrough
 <http://postdata.linhd.uned.es/ontology/postdata-core#isRealisedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isRealisedThrough> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#realises> .
@@ -479,16 +467,6 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-core#isReferencedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the specific location in a bibliographic item (an instance of Location) whose contents are related to the current item under analysis (usually, its specific bibliography)"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isReferencedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isReferencedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isReferencedIn"@en .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf
-<http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Organisation that performs the current Role"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to one of the persons (instance of Person) to whom the current Role belongs"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#label> "isRoleOf"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#isSynthesis
 <http://postdata.linhd.uned.es/ontology/postdata-core#isSynthesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -566,7 +544,16 @@ _:genid6 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-core#participateAsCreator> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#participateAsCreator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the instance of CreatorRole that identifies the current Agent as the creator of a cultural product"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#participateAsCreator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
-<http://postdata.linhd.uned.es/ontology/postdata-core#participateAsCreator> <http://www.w3.org/2000/01/rdf-schema#label> "particpateAsCreator"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#participateAsCreator> <http://www.w3.org/2000/01/rdf-schema#label> "participateAsCreator"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-core#performs
+<http://postdata.linhd.uned.es/ontology/postdata-core#performs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#performs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#performs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#performs> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#performs> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to one of the roles (an instance of Role) performed by the current Person or Organisation"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#performs> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
+<http://postdata.linhd.uned.es/ontology/postdata-core#performs> <http://www.w3.org/2000/01/rdf-schema#label> "hasRole"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#poeticType
 <http://postdata.linhd.uned.es/ontology/postdata-core#poeticType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -706,6 +693,7 @@ _:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 <http://postdata.linhd.uned.es/ontology/postdata-core#usedForSynthesis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-dates#dateCertainty
+<http://postdata.linhd.uned.es/ontology/postdata-dates#dateCertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-dates#dateCertainty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#certainty> .
 # 
 # http://schema.org/altitude
@@ -743,7 +731,6 @@ _:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#addName
 <http://postdata.linhd.uned.es/ontology/postdata-core#addName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#addName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#addName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#addName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#addName> <http://www.w3.org/2000/01/rdf-schema#comment> "It contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name"@en .
@@ -768,7 +755,6 @@ _:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#altName
 <http://postdata.linhd.uned.es/ontology/postdata-core#altName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#altName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#altName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#altName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#altName> <http://www.w3.org/2000/01/rdf-schema#comment> "Alternative name that references the current item"@en .
@@ -801,7 +787,6 @@ _:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # http://postdata.linhd.uned.es/ontology/postdata-core#biography
 <http://postdata.linhd.uned.es/ontology/postdata-core#biography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#biography> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/biography> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#biography> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#biography> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#biography> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#biography> <http://www.w3.org/2000/01/rdf-schema#comment> "An account of a person's life written, composed, or produced by another"@en .
@@ -817,7 +802,6 @@ _:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#ethnicity
 <http://postdata.linhd.uned.es/ontology/postdata-core#ethnicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#ethnicity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ethnicity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ethnicity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ethnicity> <http://www.w3.org/2000/01/rdf-schema#comment> "An ethnic group; a social group that shares a common and distinctive culture, religion, language, or the like"@en .
@@ -842,7 +826,6 @@ _:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#forename
 <http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/2000/01/rdf-schema#comment> "It contains a forename, given or baptismal name"@en .
@@ -851,7 +834,6 @@ _:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#function
 <http://postdata.linhd.uned.es/ontology/postdata-core#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#function> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#function> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
@@ -868,7 +850,6 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#genName
 <http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#comment> "It contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named"@en .
@@ -917,7 +898,6 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#isFictional
 <http://postdata.linhd.uned.es/ontology/postdata-core#isFictional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isFictional> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isFictional> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isFictional> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isFictional> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the person under analysis is a fictional character"@en .
@@ -972,7 +952,6 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#name
 <http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/name> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains a proper noun or noun phrase that refers the current agent"@en .
@@ -981,7 +960,6 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#nameLink
 <http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains a connecting phrase or link used within a name but not regarded as part of it, such as van der or of"@en .
@@ -997,7 +975,6 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#nationality
 <http://postdata.linhd.uned.es/ontology/postdata-core#nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#nationality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#nationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#nationality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#nationality> <http://www.w3.org/2000/01/rdf-schema#comment> "An ethnic group forming a part of one or more political nations"@en .
@@ -1007,7 +984,6 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://postdata.linhd.uned.es/ontology/postdata-core#notes
 <http://postdata.linhd.uned.es/ontology/postdata-core#notes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#notes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/nknouf/ns/bibtex#hasNote> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#notes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#notes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#notes> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment or explanations" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#notes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
@@ -1063,7 +1039,6 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#originalName
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the place as it appears in the source text"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
@@ -1094,7 +1069,6 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#portrait
 <http://postdata.linhd.uned.es/ontology/postdata-core#portrait> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#portrait> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#portrait> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#portrait> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#portrait> <http://www.w3.org/2000/01/rdf-schema#comment> "URL to a digital image file that depicts the person"@en .
@@ -1103,21 +1077,19 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#positionName
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#label> "positionName"@en .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-core#role
-<http://postdata.linhd.uned.es/ontology/postdata-core#role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#role> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#role> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#role> <http://www.w3.org/2000/01/rdf-schema#comment> "Function of a person or character. In a play, it is the part played by a performer"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#role> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
-<http://postdata.linhd.uned.es/ontology/postdata-core#role> <http://www.w3.org/2000/01/rdf-schema#label> "role"@en .
+# http://postdata.linhd.uned.es/ontology/postdata-core#roleName
+<http://postdata.linhd.uned.es/ontology/postdata-core#roleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#roleName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#roleName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#roleName> <http://www.w3.org/2000/01/rdf-schema#comment> "Function of a person or character. In a play, it is the part played by a performer"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#roleName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
+<http://postdata.linhd.uned.es/ontology/postdata-core#roleName> <http://www.w3.org/2000/01/rdf-schema#label> "role"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#sampleText
 <http://postdata.linhd.uned.es/ontology/postdata-core#sampleText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1129,7 +1101,6 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#sourceNote
 <http://postdata.linhd.uned.es/ontology/postdata-core#sourceNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#sourceNote> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#sourceNote> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#sourceNote> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#sourceNote> <http://www.w3.org/2000/01/rdf-schema#comment> "Note about the source used to give a particular piece of information"@en .
@@ -1139,7 +1110,6 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://postdata.linhd.uned.es/ontology/postdata-core#subtitle
 <http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/fabio/hasSubtitle> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/2000/01/rdf-schema#comment> "A secondary, usually explanatory title"@en .
@@ -1148,7 +1118,6 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#surname
 <http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains a family (inherited) name, as opposed to a given, baptismal, or nick name"@en .
@@ -1180,7 +1149,6 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#typeOfPlace
 <http://postdata.linhd.uned.es/ontology/postdata-core#typeOfPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#typeOfPlace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#typeOfPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Place> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#typeOfPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#typeOfPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of place (e.g. fictional)"@en .
@@ -1362,7 +1330,6 @@ _:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned
 _:genid49 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid49 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Function of a person or organization in the creation of a poetic work, redaction or other transmission element"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole> <http://www.w3.org/2000/01/rdf-schema#label> "CreatorRole"@en .
 # 
@@ -1435,7 +1402,6 @@ _:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/element
 _:genid62 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid62 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "A thing that happens or takes place"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
 # 
@@ -1443,7 +1409,6 @@ _:genid62 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://postdata.linhd.uned.es/ontology/postdata-core#OrderedTextUnitList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#OrderedTextUnitList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#OrderedTextUnitList> <http://www.w3.org/2000/01/rdf-schema#comment> "An ordered list of text units with a given length and indexed elements."@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#OrderedTextUnitList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#OrderedTextUnitList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#OrderedTextUnitList> <http://www.w3.org/2000/01/rdf-schema#label> "OrderedTextUnitList"@en .
 # 
@@ -1453,12 +1418,8 @@ _:genid62 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://postdata.linhd.uned.es/ontology/postdata-core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
 _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#hasCreatorAssociated> .
-_:genid63 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#isFrom> .
-_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-core#Place> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#isFrom> .
+_:genid63 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-core#Place> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "Named collection of people regarded as a single unit\nEg.: Typical examples include institutions such as ‘UNED’ or ‘the BBC’ and businesses such as ‘Google’ but also racial or ethnic groupings or political factions where these are regarded as forming a single agency such as ‘the Carthaginians’ or ‘the Communists’"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Organisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@en .
@@ -1467,140 +1428,144 @@ _:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.u
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#birthDate> .
+_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-dates#DateEntity> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
 _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#birthDate> .
-_:genid65 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-dates#DateEntity> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#birthPlace> .
+_:genid65 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-core#Place> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#birthPlace> .
-_:genid66 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-core#Place> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#birthPlaceCertainty> .
-_:genid67 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid68 .
-_:genid68 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid70 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/certainty> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#birthPlaceCertainty> .
+_:genid66 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid69 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/certainty> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#deathDate> .
+_:genid71 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-dates#DateEntity> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#deathDate> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#floruit> .
 _:genid72 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-dates#DateEntity> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
 _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#floruit> .
-_:genid73 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-dates#DateEntity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#gender> .
-_:genid74 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid75 .
-_:genid75 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid78 .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid77 .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid77 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/gender> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#gender> .
+_:genid73 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid76 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/gender> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#isAffectedBy> .
+_:genid78 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
 _:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#isAffectedBy> .
-_:genid79 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-core#Role> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#isMentionedIn> .
+_:genid79 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
 _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#isMentionedIn> .
-_:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#isReferencedIn> .
+_:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
 _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#isReferencedIn> .
-_:genid81 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#literaryPeriod> .
-_:genid82 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid83 .
-_:genid83 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid86 .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid85 .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid85 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/literary-period> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#religiousAffiliation> .
-_:genid87 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid88 .
-_:genid88 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid90 .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid90 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/religious-affiliation> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#school> .
-_:genid92 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid93 .
-_:genid93 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid96 .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid95 .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid95 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/school> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#socialStatus> .
-_:genid97 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid98 .
-_:genid98 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid101 .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid100 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/social-status> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#birthPlaceCertainty> .
-_:genid102 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid102 <http://www.w3.org/2002/07/owl#onClass> _:genid103 .
-_:genid103 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid106 .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid105 .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid105 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/certainty> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#literaryPeriod> .
+_:genid81 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid84 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/literary-period> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#religiousAffiliation> .
+_:genid86 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid89 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/religious-affiliation> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#school> .
+_:genid91 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid94 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/school> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#socialStatus> .
+_:genid96 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid97 .
+_:genid97 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid99 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/social-status> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#birthPlaceCertainty> .
+_:genid101 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid101 <http://www.w3.org/2002/07/owl#onClass> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid104 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es/kos/certainty> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#name> .
+_:genid106 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
 _:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid107 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#forename> .
@@ -1947,7 +1912,7 @@ _:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 _:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid190 .
 _:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid190 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#role> .
+_:genid190 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#roleName> .
 _:genid190 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid190 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid191 .
@@ -1956,7 +1921,6 @@ _:genid191 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elemen
 _:genid191 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid191 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "Function of a person or character"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Role> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Role> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
 # 
@@ -1964,7 +1928,6 @@ _:genid191 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/X
 <http://postdata.linhd.uned.es/ontology/postdata-core#TextUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#TextUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#Slot> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#TextUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Text unit on an ordered list"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#TextUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#TextUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/POSTDATA-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#TextUnit> <http://www.w3.org/2000/01/rdf-schema#label> "TextUnit"@en .
 # 
